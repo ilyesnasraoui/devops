@@ -3,7 +3,7 @@ pipeline
     agent any
     environment {
         EMAIL_TO = 'nasraouiiii50@gmail.com'
-        registry='ilyes/spring'
+        registry='ilyassna/spring'
         registryCredential=''
         dockerImage=''
     }
@@ -88,7 +88,7 @@ pipeline
                 script
                 {
                     dockerImage=docker.build registry+":$BUILD_NUMBER"
-                  // sh 'docker build -t ilyes/spring .'
+                  // sh 'docker build -t ilyassna/spring .'
                 }
             }
         }
