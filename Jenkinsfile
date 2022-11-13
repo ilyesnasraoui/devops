@@ -88,7 +88,7 @@ pipeline
                 script
                 {
                     dockerImage=docker.build registry+":$BUILD_NUMBER"
-                  // sh 'docker build -t ilyes/project .'
+                  // sh 'docker build -t ilyes/spring .'
                 }
             }
         }
